@@ -466,6 +466,15 @@ section {
     margin-top: 10px;
     line-height: 1.6; /* Line height for readability */
 }
+.scu {
+    font-size: 1em;
+    line-height: 1.6; /* Line height for readability */
+    background: linear-gradient(90deg, rgb(255, 139, 139), rgb(247, 202, 202), rgb(247, 157, 157));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; /* Ensures gradient applies fully across text */
+}
+
 /* Initially hidden */
 #about {
     opacity: 0;
