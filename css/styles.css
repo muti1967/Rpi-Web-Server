@@ -669,6 +669,7 @@ html {
     transform: scale(1.2); /* Slightly enlarge on hover */
     filter: brightness(.8) sepia(1) hue-rotate(100deg) saturate(4) contrast(.7); /* Blue tint */
 }
+
 #about-me h2 {
     font-size: 2em;
     margin-top: 10px;
