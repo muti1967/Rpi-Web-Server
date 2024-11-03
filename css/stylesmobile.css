@@ -40,7 +40,7 @@ nav {
     font-size: 2em;
     cursor: pointer;
     color: #fff;
-    display: none;
+    display: none; /* Hidden by default for larger screens */
 }
 
 #nav-links {
@@ -60,7 +60,7 @@ nav {
 /* For Mobile (Hamburger Menu) */
 @media (max-width: 768px) {
     #nav-links {
-        display: none;
+        display: none; /* Hide the menu initially on mobile */
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.9);
         position: absolute;
@@ -71,11 +71,11 @@ nav {
     }
 
     #nav-links.show-menu {
-        display: flex;
+        display: flex; /* Show menu when the class is toggled */
     }
 
     .menu-icon {
-        display: block;
+        display: block; /* Show the menu icon on mobile */
     }
 
     #nav-links li {
