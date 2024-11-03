@@ -22,7 +22,6 @@ body {
 .logo img {
     max-width: 80px;
 }
-
 /* Navigation Styles */
 nav {
     position: fixed;
@@ -84,23 +83,6 @@ nav {
     }
 }
 
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 10px; /* Reduce gap for mobile */
-    flex-direction: row; /* Keep nav items inline on mobile */
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em; /* Adjust font size for mobile */
-    position: relative;
-}
 
 /* Welcome Section */
 * { color:#fff; text-decoration: none;}
