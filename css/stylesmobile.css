@@ -22,64 +22,65 @@ body {
 .logo img {
     max-width: 80px;
 }
-/* Navigation Styles */
+/* Base styles for navigation */
 nav {
-    position: fixed;
-    top: 0;
+    padding: 1.5rem 2rem;
+    background-color: #222831;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Checkbox hidden by default */
+#check {
+    display: none;
+}
+
+/* Hamburger icon styling */
+.checkbtn {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    display: none; /* Hidden on larger screens */
+}
+
+/* Mobile navigation */
+.nav-mobile {
+    display: none; /* Hide menu initially */
+    position: absolute;
+    top: 60px;
     left: 0;
     width: 100%;
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: #222831;
+    z-index: 1;
 }
 
-.menu-icon {
-    font-size: 2em;
-    cursor: pointer;
-    color: #fff;
-    display: none; /* Hidden by default for larger screens */
-}
-
-#nav-links {
-    display: flex;
-    gap: 20px;
+/* Menu links styling */
+.nav-mobile ul {
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
-#nav-links li a {
+.nav-mobile ul li a {
     color: #fff;
+    padding: 1rem 2rem;
+    display: block;
     text-decoration: none;
-    font-weight: bold;
 }
 
-/* For Mobile (Hamburger Menu) */
-@media (max-width: 768px) {
-    #nav-links {
-        display: none; /* Hide the menu initially on mobile */
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-    }
+/* Show menu when checkbox is checked */
+#check:checked ~ .nav-mobile {
+    display: block;
+}
 
-    #nav-links.show-menu {
-        display: flex; /* Show menu when the class is toggled */
-    }
-
-    .menu-icon {
-        display: block; /* Show the menu icon on mobile */
-    }
-
-    #nav-links li {
-        padding: 15px 0;
+/* Responsive styling */
+@media (max-width: 992px) {
+    .checkbtn {
+        display: block; /* Show hamburger icon on smaller screens */
+        font-size: 2rem;
     }
 }
 
