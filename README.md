@@ -11,5 +11,6 @@ Portfolio Site Features:
  - Auto updates
  - Auto virus and secruity checks daily
  - Auto pull & push requests
+
 I plan to formulate a guide for others to be able to set up a secure website on their own raspberry pis at home!
 
