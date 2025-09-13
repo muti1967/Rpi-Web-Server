@@ -287,7 +287,7 @@ section {
     text-align: center;
     width: 100%;
     max-width: 310px;
-    max-height: 370px;
+    min-height: 370px; /* Changed from max-height to min-height */
 
     margin: 0 auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -298,7 +298,14 @@ section {
 
 .project-card img {
     width: 100%;
-    height: 300px;
+    height: 250px; /* Reduced height to give more space for text */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card video {
+    width: 100%;
+    height: 250px; /* Reduced height to give more space for text */
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -310,6 +317,11 @@ section {
     font-weight: bold;
     background-color: #111;
     transition: background-color 0.3s ease;
+    flex-grow: 1; /* Allow text area to expand as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4; /* Better line spacing for multi-line text */
 }
 
 .project-card:hover {
@@ -627,13 +639,12 @@ html {
 /* Container for About Me and Image */
 .content-container2 {
     display: flex;
-    margin-right: 10%;
     justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Align text and image at the top */
+    align-items: flex-start; /* Align text and image at the top */
     padding: 20px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    color: #4b4b4b;
-
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px; /* Space between text and images */
 }
 
 /* About Me text section */
@@ -645,7 +656,36 @@ html {
     margin-top: 11%; /* Adjust as needed */
     padding-right: 20px; /* Space between text and image */
     padding-left: 20%; /* Space between text and image */
+}
 
+.profile-pictures {
+    flex: 0 0 450px; /* Increased width for the image container */
+    display: flex;
+    flex-direction: column; /* Images stack vertically */
+    gap: 20px; /* Space between images */
+    margin-top: 11%; /* Align with text */
+}
+
+.profile-picture2 img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.profile-picture3 img, .profile-picture3 video {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Make app screenshots bigger */
+.app-screenshots img {
+    max-width: 550px !important;
+    width: 100% !important;
 }
 #about-me p{
     color: #cecece;
@@ -750,11 +790,30 @@ html {
     -webkit-text-fill-color: transparent;
     display: inline-block; /* Ensures gradient applies fully across text */
 }
+
+/* Project links styling */
+.aboutmesection a {
+    background: linear-gradient(90deg, #224eff, #8480ff); /* Blue to purple gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.aboutmesection a:hover {
+    background: linear-gradient(90deg, #ff5722, #8480ff); /* Orange to purple on hover */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+}
 .content-container2 {
     display: flex;
     align-items: flex-start; /* Aligns items to the top */
-    gap: 20px; /* Space between text and images */
+    gap: 40px; /* Space between text and images */
     padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .aboutmesection {
@@ -762,25 +821,22 @@ html {
 }
 
 .profile-pictures {
+    flex: 0 0 400px; /* Fixed width for the image container */
     display: flex;
     flex-direction: column; /* Images stack vertically */
-    gap: 15px; /* Space between images */
+    gap: 20px; /* Space between images */
 }
 
 .profile-picture3 img {
-    padding-top: 10%;
-    margin-top: 30%;
-
-    padding-left: 10%;
-    padding-right: 10%;
-    width: 111; /* Adjust image size as needed */
+    width: 100%;
+    max-width: 400px;
     height: auto;
-    border-radius: 45px;
-
+    border-radius: 5px;
 }
+
 .profile-picture2 img {
-    padding-top: 0%;
-    width: 110; /* Adjust image size as needed */
+    width: 100%;
+    max-width: 400px; 
     height: auto;
     border-radius: 5px;
 }
@@ -825,7 +881,7 @@ html {
 
 
 .project-card {
-    background-color: #222;
+    background-color: #000000;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
@@ -848,7 +904,7 @@ html {
     color: #224eff;
     text-decoration: none;
     font-weight: bold;
-    background-color: #111;
+    background-color: #000000;
     transition: background-color 0.3s ease;
 }
 
