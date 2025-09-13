@@ -15,7 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
-
   </head>
   <body>
     <div id="top"></div>
@@ -25,28 +24,24 @@
       </a>
     </div>
 
-   
     <nav>
       <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-          ☰
-      </label>
+      <label for="check" class="checkbtn"> ☰ </label>
       <div class="nav-mobile">
-          <ul>
-              <li><a href="/pages/aboutme.html">ABOUT ME</a></li>
-              <li><a href="#portfolio">MY RESUME</a></li>
-              <li><a href="/pages/projects.html">PROJECTS</a></li>
-              <li><a href="#contact">CONTACT ME</a></li>
-          </ul>
+        <ul>
+          <li><a href="/pages/aboutme.html">ABOUT ME</a></li>
+          <li><a href="#portfolio">MY RESUME</a></li>
+          <li><a href="/pages/projects.html">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT ME</a></li>
+        </ul>
       </div>
-  </nav>
-  
+    </nav>
 
-<script>
-    function toggleMenu() {
+    <script>
+      function toggleMenu() {
         document.getElementById("nav-links").classList.toggle("show-menu");
-    }
-</script>
+      }
+    </script>
 
     <div class="content-container">
       <div class="text-content">
@@ -71,8 +66,8 @@
           <p class="intro-text">
             I am studying Computer Science at
             <strong class="scu">Santa Clara University</strong>
-            and working at Apple as a Certified Technician. Please feel free to check out
-            some of my projects below on my personally coded website!
+            and working at Apple as a Certified Technician. Please feel free to
+            check out some of my projects below on my personally coded website!
           </p>
         </section>
         <script></script>
@@ -99,7 +94,8 @@
           to every customer. I value teamwork, diversity, and innovation, and I
           bring a positive and collaborative attitude to my role.
         </p>
-      </section>       <!-- Add Timeline here later when i have time. Education, and Skills-->
+      </section>
+      <!-- Add Timeline here later when i have time. Education, and Skills-->
     </div>
     <div class="container">
       <!-- Portfolio Section -->
@@ -120,42 +116,53 @@
         <h2>Featured Projects</h2>
         <div class="project-cards">
           <div class="project-card">
-            <img src="/files/emotionai.png" alt="AI Emotion Detector" />
-            <a href="/pages/ai_project.html" 
-              >AI Emotion Detector</a
+            <a href="/pages/aigestureproj.html">
+              <video autoplay muted loop>
+                <source src="/files/gest_demo_vid.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <a href="/pages/aigestureproj.html"
+              >AI Gesture Recognition Device</a
             >
           </div>
+
           <div class="project-card">
-            <img
-              src="/files/projrpi.jpeg"
-              alt="RPI project"
-            />
-            <a href="/pages/rpiserverproj.html" 
+            <a href="/pages/ai_project.html">
+              <img src="/files/emotionai.png" alt="AI Emotion Detector" />
+            </a>
+            <a href="/pages/ai_project.html">AI Emotion Detector</a>
+          </div>
+
+          <div class="project-card">
+            <a href="/pages/rpiserverproj.html">
+              <img src="/files/projrpi.jpeg" alt="RPI project" />
+            </a>
+            <a href="/pages/rpiserverproj.html"
               >Personal Hosted Website Using Raspberry Pi!</a
             >
           </div>
+
           <div class="project-card">
-            <img src="/files/gesture_device.JPG" alt="AI Gesture Recognition Device ">
-            <a href="/pages/aigestureproj.html" >AI Gesture Recognition Device</a>
-        </div>
-          <div class="project-card">
-            <img
-              src="/files/autodeskdesign.png"
-              alt="Auto Desk Design Challenge"
-            />
+            <a href="/files/audtodeskaward.pdf" target="_blank">
+              <img
+                src="/files/autodeskdesign.png"
+                alt="Auto Desk Design Challenge"
+              />
+            </a>
             <a href="/files/audtodeskaward.pdf" target="_blank"
               >Auto Desk Design Challenge</a
             >
-          </div>
-        
           </div>
         </div>
       </section>
     </div>
     <div class="view-all-projects">
-      <a href="/pages/projects.html" class="view-all-button">View All Projects</a>
+      <a href="/pages/projects.html" class="view-all-button"
+        >View All Projects</a
+      >
     </div>
-    
+
     <section id="contact" class="full-section">
       <div class="contact-social-container">
         <div class="social-media-icons">
