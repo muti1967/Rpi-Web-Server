@@ -578,9 +578,12 @@ section {
 }
 
 .profile-picture img {
-    width: 400px; /* Adjusted image size */
-    height: 400px;
-    border-radius: 50%;
+    width: 480px; /* Increased size for more zoom */
+    height: 480px;
+    border-radius: 50%; /* Perfect circle */
+    object-fit: cover; /* Maintains aspect ratio without stretching */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 .about-content {
@@ -663,7 +666,7 @@ html {
     display: flex;
     flex-direction: column; /* Images stack vertically */
     gap: 20px; /* Space between images */
-    margin-top: 11%; /* Align with text */
+    margin-top: 20%; /* Lowered the image by increasing margin */
 }
 
 .profile-picture2 img {
